@@ -1,0 +1,26 @@
+{
+    "browsertime": {
+      "iterations": 5,
+      "browser": "chrome"
+    },
+    "plugins": {
+        "remove": ["html"]
+      },
+
+      "resultBaseURL": "https://your.bucket.url",
+      "gzipHAR": true,
+      "html": {
+        "fetchHARFiles": true
+      },
+
+
+    "s3": {
+        "key": "YOUR_KEY",
+        "secret": "YOUR_SECRET",
+        "bucketname": "YOUR_BUCKETNAME",
+        "removeLocalResult": true
+     },
+     "screenshot": {
+        "type": "jpg"
+        }
+    }
